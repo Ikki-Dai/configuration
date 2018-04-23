@@ -1,0 +1,8 @@
+[user]
+	name = myname
+	email = myname@gmail.com
+[core]
+	autocrlf = input
+	safecrlf = warn
+[i18n]
+	commitEncoding = utf-8
