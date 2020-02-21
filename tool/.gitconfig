@@ -5,4 +5,6 @@
 	autocrlf = input
 	safecrlf = warn
 [i18n]
-	commitEncoding = utf-8
+  commitEncoding = utf-8
+[commit]
+  template = $HOME/.commit.template
