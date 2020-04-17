@@ -1,0 +1,21 @@
+# sharding-sphere only use master slave to configure SNOWFLAKE
+    sharding:
+      tables:
+        user:
+          actual-data-nodes: master.user
+          table-strategy:
+            inline:
+              sharding-column: id$->{}
+              algorithm-expression: user$->{}
+          key-generator:
+            column: id
+            type: SNOWFLAKE
+            worker.id: 4321
+      master-slave-rules:
+        master:
+          master-data-source-name: master
+          slave-data-source-names: slave
+      
+    props:
+      sql:
+        show: true
