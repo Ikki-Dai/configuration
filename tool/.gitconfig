@@ -1,10 +1,11 @@
 [user]
-	name = myname
-	email = myname@gmail.com
+   name = myname
+   email = myname@gmail.com
 [core]
-	autocrlf = input
-	safecrlf = warn
+   autocrlf = input
+   safecrlf = warn
+   quotepath = false
 [i18n]
-  commitEncoding = utf-8
+   commitEncoding = utf-8
 [commit]
-  template = $HOME/.commit.template
+   template = $HOME/.commit.template
