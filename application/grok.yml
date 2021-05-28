@@ -1,0 +1,37 @@
+# Spring Boot Logback grok pattern
+%{TIMESTAMP_ISO8601:datetime}\s+%{LOGLEVEL:loglevel}\s+%{INT:thread}\s+-+\s+\[%{USERNAME:threadname}\]\s+%{USERNAME:classpath}\s+\:(?<message>.*)
+
+###
+{
+  "datetime": [
+    [
+      "2021-05-28 16:03:28.137"
+    ]
+  ],
+  "loglevel": [
+    [
+      "INFO"
+    ]
+  ],
+  "thread": [
+    [
+      "19212"
+    ]
+  ],
+  "threadname": [
+    [
+      "io-12080-exec-9"
+    ]
+  ],
+  "classpath": [
+    [
+      "c.s.x.i.advice.EncryptRequestBodyAdvice"
+    ]
+  ],
+  "message": [
+    [
+      " request encrypt"
+    ]
+  ]
+}
+
