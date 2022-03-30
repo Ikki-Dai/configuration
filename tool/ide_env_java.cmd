@@ -7,6 +7,6 @@ setx NODE_HOME "D:/lang/node"
 setx PATH "%PATH%;%NODE_HOME/%"
 
 echo "set RUST env ..."
-setx RUST_HOME "D:/lang/rust"
+setx RUSTUP_HOME "D:/lang/rust"
 setx CARGO_HOME "D:/lang/cargo"
 
